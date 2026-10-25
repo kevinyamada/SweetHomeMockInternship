@@ -48,6 +48,11 @@ public interface PieceOfFurniture {
   public abstract float getDepth();
 
   /**
+   * Returns the bounding-box volume in cubic centimeters.
+   */
+  float getVolume();
+
+  /**
    * Returns the height of this piece of furniture.
    */
   public abstract float getHeight();
