@@ -22,8 +22,8 @@ package com.eteks.sweethome3d.swing;
 import java.awt.AWTEvent;
 import java.awt.BorderLayout;
 import java.awt.Color;
-import java.awt.Dimension;
 import java.awt.Component;
+import java.awt.Dimension;
 import java.awt.EventQueue;
 import java.awt.Font;
 import java.awt.Graphics;
@@ -802,7 +802,11 @@ public class FurnitureTable extends JTable implements View, Printable {
       Dimension oldSize = getSize();
       try {
         setColumnModel(printableColumnModel);
-        updateTableColumnsWidth(OperatingSystem.isWindows() ? 3 : 0);
+        if (OperatingSystem.isWindows()) {
+          updateTableColumnsWidth(3);
+        } else {
+          updateTableColumnsWidth(0);
+        }
         setGridColor(gridColor);
         setSize(getPreferredSize());
         doLayout();

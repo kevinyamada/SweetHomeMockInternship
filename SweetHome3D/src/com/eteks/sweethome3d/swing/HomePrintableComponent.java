@@ -352,7 +352,6 @@ public class HomePrintableComponent extends JComponent implements Printable {
         furnitureFilter = furnitureTable.getFurnitureFilter();
         furnitureTable.setFurnitureFilter(new FurnitureTable.FurnitureFilter() {
             public boolean include(Home home, HomePieceOfFurniture piece) {
-              // Printing covers every viewable level, independently of the screen filter.
               return piece.getLevel() == null || piece.getLevel().isViewable();
             }
           });

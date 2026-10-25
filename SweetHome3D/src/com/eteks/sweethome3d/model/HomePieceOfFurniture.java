@@ -544,9 +544,6 @@ public class HomePieceOfFurniture extends HomeObject implements PieceOfFurniture
     }
   }
 
-  /**
-   * Returns the bounding-box volume in cubic centimeters.
-   */
   public float getVolume() {
     return getWidth() * getDepth() * getHeight();
   }
