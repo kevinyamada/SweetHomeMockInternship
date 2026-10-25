@@ -594,9 +594,6 @@ public class CatalogPieceOfFurniture implements Comparable<CatalogPieceOfFurnitu
     return this.depth;
   }
 
-  /**
-   * Returns the bounding-box volume in cubic centimeters.
-   */
   public float getVolume() {
     return getWidth() * getDepth() * getHeight();
   }

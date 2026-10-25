@@ -47,9 +47,6 @@ public interface PieceOfFurniture {
    */
   public abstract float getDepth();
 
-  /**
-   * Returns the bounding-box volume in cubic centimeters.
-   */
   float getVolume();
 
   /**
